@@ -46,10 +46,10 @@ while is_on:
         print(f"Water: {resources['water']}ml\nMilk: {resources['milk']} ml\nCoffee: {resources['coffee']}ml\nMoney: ${profit} ")
     else:
         drink = MENU[coffee_choice]
-        if check_resources(drink["ingredients"]):
+        if check_resources(drink["ingredients"]) and make_payment(drink["cost"]):
             deduct_resources(drink["ingredients"]) 
-            if make_payment(drink["cost"]):
-                profit += drink["cost"]
+            profit += drink["cost"]
+            
             
 
             
