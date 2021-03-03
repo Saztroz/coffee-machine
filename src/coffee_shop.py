@@ -31,7 +31,6 @@ def make_payment(coffee_cost):
         paid_amount = total_paid - drink["cost"]
         change = format(paid_amount, '.2f')
         print(f"Here is ${change} in change.")
-        print("Here is your latte. Enjoy!")
         return True
 
 is_on = True
@@ -49,6 +48,7 @@ while is_on:
         if check_resources(drink["ingredients"]) and make_payment(drink["cost"]):
             deduct_resources(drink["ingredients"]) 
             profit += drink["cost"]
+            print("Here is your {coffee_choice}. Enjoy!")
             
             
 
