@@ -43,7 +43,7 @@ while is_on:
     if coffee_choice == "off":
         is_on = False
     elif coffee_choice == "report":
-        print(f"Water: {resources['water']}ml\nMilk: {resources['milk']} ml\nCoffee: {resources['coffee']}ml\nMoney: {profit} ")
+        print(f"Water: {resources['water']}ml\nMilk: {resources['milk']} ml\nCoffee: {resources['coffee']}ml\nMoney: ${profit} ")
     else:
         drink = MENU[coffee_choice]
         if check_resources(drink["ingredients"]):
