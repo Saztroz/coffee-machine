@@ -16,7 +16,6 @@ def deduct_resources(coffee_ingredients):
 
 #ask for payment, make sure its enough, add to profit and return change
 def make_payment(coffee_cost):
-
     print("Please insert coins.")
     quarters = int(input("How many quarters?: "))
     dimes = int(input("How many dimes?: "))
@@ -34,6 +33,7 @@ def make_payment(coffee_cost):
         print(f"Here is ${change} in change.")
         print("Here is your latte. Enjoy!")
         return True
+
 is_on = True
 profit = 0
 
